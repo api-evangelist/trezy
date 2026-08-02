@@ -1,7 +1,28 @@
 aid: trezy
 name: Trezy
-description: Trezy is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Trezy is a Franco-Dutch fintech SaaS (Trezy SAS, founded 2021 in Paris by Quentin Lacointa)
+  offering AI-driven cash flow management for small and medium businesses across Europe, the US,
+  and Canada. It connects to 2,000+ banks via PSD2/Open Banking to deliver real-time cash position,
+  automatic AI transaction categorization, 95%-accurate 12-month cash flow forecasting, real-time
+  P&L, 27+ financial KPIs, supplier cost analysis, and OCR-based document management from a single
+  platform starting at a free tier. Trezy also offers dedicated plans for external CFOs (DAF) and
+  accounting firms, and integrates with QuickBooks Online and Pennylane. Backed by Seedcamp and
+  Playfair Capital (with Kima Ventures and Discovery Ventures) in a €3M seed round. Trezy publishes
+  an llms.txt corpus and an /.well-known/ai-plugin.json manifest but does not expose a public
+  developer API.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.trezy.io/images/Trezy-logo-black.svg
 url: https://raw.githubusercontent.com/api-evangelist/trezy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +30,25 @@ x-backed-by:
 - seedcamp
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Cash Flow Management
+- Financial Forecasting
+- Treasury
+- SMB
+- Accounting
+- Open Banking
+- Artificial Intelligence
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +57,26 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://trezy.io
+  url: https://www.trezy.io
+- type: Documentation
+  url: https://www.trezy.io/documentation
+- type: Pricing
+  url: https://www.trezy.io/pricing
+- type: Blog
+  url: https://www.trezy.io/blog
+- type: TermsOfService
+  url: https://www.trezy.io/legal/terms
+- type: SignUp
+  url: https://appv2.trezy.io/signup
+- type: Support
+  url: mailto:support@trezy.io
+- type: LinkedIn
+  url: https://www.linkedin.com/company/trezy
+- type: Twitter
+  url: https://twitter.com/trezy_io
+- type: LLMsTxt
+  url: llms/trezy-llms.txt
+- type: WellKnown
+  url: well-known/trezy-well-known.yml
+- type: DomainSecurity
+  url: security/trezy-domain-security.yml
