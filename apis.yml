@@ -11,6 +11,17 @@ description: >-
   Playfair Capital (with Kima Ventures and Discovery Ventures) in a €3M seed round. Trezy publishes
   an llms.txt corpus and an /.well-known/ai-plugin.json manifest but does not expose a public
   developer API.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
