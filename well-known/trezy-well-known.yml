@@ -2,17 +2,25 @@ generated: '2026-07-21'
 method: searched
 source: https://www.trezy.io/.well-known/
 host: https://www.trezy.io
-documents:
-- path: /.well-known/ai-plugin.json
-  status: 200
-  content_type: application/json
-  file: trezy-ai-plugin.json
-  note: OpenAI-style AI plugin manifest; auth type none; api.url points at /llms.txt (marketing/SEO corpus), not an OpenAPI contract.
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
+hosts:
+- host: https://www.trezy.io
+  documents:
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: trezy-ai-plugin.json
+    content_type: application/json
+    note: OpenAI-style AI plugin manifest; auth type none; api.url points at /llms.txt (marketing/SEO
+      corpus), not an OpenAPI contract.
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
