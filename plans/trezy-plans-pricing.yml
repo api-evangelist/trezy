@@ -1,0 +1,55 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.trezy.io/pricing
+sources:
+- https://www.trezy.io/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: FAQ also cites monthly-billing prices of €9/mo (Starter) and €39/mo (Premium); enterprise/custom
+  solutions quoted by sales.
+plan_count: 4
+currency: EUR
+plans:
+- name: Free
+  price_text: €0 /mo
+  price: 0
+  currency: EUR
+  period: month
+  unit: account
+  included_quota: Cashflow Statements, Transactions History, 1 bank account, AI categorization, Email
+    support
+- name: Starter
+  price_text: €7.50 /mo
+  price: 7.5
+  currency: EUR
+  period: month
+  unit: account
+  included_quota: Billed €90/year; forecast cashflow, invoices, performance analytics, 1 bank account,
+    priority support
+- name: Premium
+  price_text: €32.50 /mo
+  price: 32.5
+  currency: EUR
+  period: month
+  unit: account
+  included_quota: Billed €390/year; integrations, price analysis, spending reports, unlimited bank accounts
+- name: External CFO
+  price_text: Starting from 20€ /mo per company • min. 3 accounts
+  price: 20
+  currency: EUR
+  period: month
+  unit: per company
+  included_quota: P&L, balance sheet, 27+ KPIs, cash flow and AI forecasts
+rate_limit_statements:
+- Free and Starter plans allow 1 bank account
+- Premium plan allows unlimited bank accounts from 2000+ banks worldwide
